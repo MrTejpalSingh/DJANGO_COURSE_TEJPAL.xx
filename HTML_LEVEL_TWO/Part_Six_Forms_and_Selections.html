@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Feedback</title>
+  </head>
+  <body>
+    <h1>Hotel Feedback form</h1>
+
+    <form  method="get">
+      <h2>Are u from inside US? Or Outside the US</h2>
+
+      <label for="inus">Inside </label>
+      <input id = "inus" type="radio" name="loc" value="Inside"  >
+
+      <label for="outus">Outside</label>
+      <input id="outus"type="radio" name="loc" value="Outside" required>
+
+      <h2>How was your service?</h2>
+      <select name="stars">
+        <option value="Great">3</option>
+        <option value="Okay">2</option>
+        <option value="Bad">1</option>
+      </select>
+        <input type="submit" name="" value="submit">
+
+      <h3>Selection of an Avatar: </h3>
+    <ol>
+      <li>
+        <label for="Name_Of_Avatar">Name of the Avatar:</label>
+        <select  id="Name_Of_Avatar"class="" name="AvatarName">
+          <option value="Tejpal Singh">Tejpal Singh</option>
+          <option value="Alim Lalani">Alim Lalani</option>
+          <option value="Shubham Gore">Shubham Gore</option>
+          <option value="Rakesh Samnto">Rakesh Samnto</option>
+          <option value="Diljeet Dosanjh">Diljeet Dosanjh</option>
+        </select>
+      </li>
+
+        <li>
+          <label for="Grades">Image in Society:</label>
+          <select  id="Grades"class="" name="Image">
+            <option value="100">Awsome</option>
+            <option value="50">Amazing</option>
+            <option value="52">Not good</option>
+            <option value="52">Not bad</option>
+            <option value="88">Ghatiya insan</option>
+          </select>
+        </li>
+
+      <li>
+        <label for="Experience">Maximum skills:</label>
+        <select  id="Experience"class="" name="Maximum_Skills">
+          <option value="10 ">10</option>
+          <option value="5 ">5</option>
+          <option value="3 ">3</option>
+          <option value="2 ">2</option>
+          <option value="1 ">1</option>
+        </select>
+      </li>
+
+      <li>
+      <label for="language">Domain:</label>
+      <select  id="language"class="" name="language">
+        <option value="Racing">Racing</option>
+        <option value="Fighting">Fighting</option>
+        <option value="China-Pani">China-Pani</option>
+        <option value="Ashta_chamma">Ashta_chamma</option>
+        <option value="Golf">Golf</option>
+      </select>
+      </li>
+    </ol>
+
+    </form>
+  </body>
+</html>
