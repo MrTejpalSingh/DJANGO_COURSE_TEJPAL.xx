@@ -1,0 +1,26 @@
+/* General Structure of CSS
+ selected tag{
+  property of the selected time: value
+} */
+
+body{
+  background: #525252
+}
+
+h1{
+  color: blue
+}
+
+h2{
+  color: rgb(52, 208, 235)
+}
+
+li{
+  color: #5142f5
+}
+
+h3{
+  color: rgba(255, 15, 86, 0.5);
+}
+
+
