@@ -1,3 +1,18 @@
+body{
+  background: url(https://wallpaperaccess.com/full/169304.jpg);
+}
 h1{
-  color: rgb(51, 156, 138);
+  color: rgb(18, 21, 33);
+}
+span{
+  color: white;
+  font-family: monospace;
+}
+td{
+  background: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg);
+}
+
+li{
+  color: rgb(186, 0, 0);
+  font-size: 20px;
 }
