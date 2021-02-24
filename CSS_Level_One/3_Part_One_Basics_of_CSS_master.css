@@ -1,0 +1,31 @@
+.firstDiv{
+  color: blue;
+}
+.secondDiv{
+  color: red;
+}
+#singledout{
+  color: red;
+  text-decoration-color: yellow;
+  text-decoration: overline;
+  /* text-decoration: underline; */
+  /* text-decoration: line-through; */
+  font-size: 60px;
+}
+
+h3 + ul{
+  color: blue;
+  border: 4px dotted purple;
+}
+
+li a{
+  color: red;
+}
+
+li a[href="https://youtube.com/"]{
+  border: 2px double blue;
+}
+
+li a[href="https://www.google.com/earth/"]{
+  border: 2px double black;
+}
