@@ -29,28 +29,31 @@ ul li a{
   transition: 0.6s ease;
 }
 
+.logo img{
+float: left;
+width: 100px;
+height: auto;
+}
+
+.title{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+
+
 ul li a:hover{
   color: black;
   background-color: white;
 }
 
-.logo img{
-  float: left;
-  width: 100px;
-  height: auto;
-}
-
-.title{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
 
 .title h1{
     font-size: 70px;
     color: white;
 }
+
 
 .button{
   position: absolute;
@@ -66,6 +69,7 @@ ul li a:hover{
   border: 1px solid transparent;
   transition: 0.6s ease;
 }
+
 
 .btn:hover{
   color: black;

@@ -1,0 +1,38 @@
+#SideNav{
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  background-color: #009688;
+  z-index: 1;
+}
+
+nav ul li{
+  list-style-type: none;
+  margin: 50px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+
+#menuBtn{
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background-color: red;
+  text-align: center;
+  border-radius: 3px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#menuBtn img{
+  width: 20px;
+  margin-top: 15px
+}

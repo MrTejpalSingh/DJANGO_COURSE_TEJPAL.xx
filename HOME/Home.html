@@ -45,6 +45,39 @@
 
       </ul>
     </ul>
-  </body>
-</html>
-html
+
+    <!-- Side Nav -->
+    <div id="sd">
+      <nav>
+        <ul>
+          <li> <a href="#">A</a> </li>
+          <li> <a href="#">B</a> </li>
+          <li> <a href="#">C</a> </li>
+          <li> <a href="#">D</a> </li>
+          <li> <a href="#">D</a> </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="MenuBtn">
+      <img src="images/menu.png" alt="OOPS!" id="menu" >
+    </div>
+
+    <script>
+      var MenuBtn = document.getElementById("MenuBtn")
+      var sd = document.getElementById("sd")
+      var menu = document.getElementById("menu")
+
+      MenuBtn.onclick = function(){
+        if (sd.style.right == "-250px") {
+          alert("Bulla! chl to rha hai!")
+          sd.style.right == "0";
+        }
+        else {
+          sd.style.right == "0";
+          alert("MKBD iski! chl to rha hai!")
+        }
+      }
+    </script>
+    </body>
+  </html>

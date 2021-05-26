@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div id="SideNav">
+      <nav>
+        <ul>
+          <li> <a href="#">A</a> </li>
+          <li> <a href="#">B</a> </li>
+          <li> <a href="#">C</a> </li>
+          <li> <a href="#">D</a> </li>
+          <li> <a href="#">D</a> </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="menuBtn">
+      <img src="images/menu.png" alt="OOPS!" id="menu" >
+    </div>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn")
+      var SideNav = document.getElementById("SideNav")
+      var menu = document.getElementById("menu")
+
+      menuBtn.onclick = function(){
+        if (SideNav.style.right == "-250px") {
+          SideNav.style.right == "0";
+        }
+        else {
+          SideNav.style.right == "-250px";
+        }
+      }
+    </script>
+
+
+
+  </body>
+</html>

@@ -8,97 +8,160 @@
 header{
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ), url('../images/wallPaprMeliodas&Zeldris.jpg');
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../images/Zaintsu_2.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 nav{
-  width: 100;
+  width: 100%;
   height: 15vh;
-  background: rgba(0,0,0,0.5);
+  /* background: Red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* #img_logo{
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+} */
+
+nav .logo{
+  width: 25%;
+  border-radius: 50px;
+  /* background-color: rgba(0,0,0,0.2); */
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
   color: white;
 }
 
-nav .logo{
-  display: flex;
-  justify-content:center;
-  width: 25%;
-
-}
-
-#logo_txt{
-  margin-left: 5px;
-  margin-top: 20px;
-  font-size: 35px;
-}
-
-#logo_img{
-  margin-left: 5px;
-  width: 40px;
-  height: auto;
+nav .logo h2{
+  margin-top: 5px;
 }
 
 nav .menu{
   width: 40%;
+  /* background:yellow; */
   display: flex;
   justify-content: space-around;
 }
 
 nav .menu a{
-  padding: 10px 30px;
+  color: white;
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  padding: 12px 30px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 50px;
+  transition: all 0.4s ease;
 }
 
-
+nav .menu a:hover{
+  background: yellow;
+  color: orange;
+}
 main{
-  width: 100%;
-  height: 85%;
-  display: flex;
+   width: 100%;
+   height: 85vh;
+  color: white;
   justify-content: center;
+  display: flex;
   align-items: center;
   text-align: center;
-  color: white;
 }
 
 section h3{
-  font-size: 35px;
-  text-shadow: 5px 2px 2px black;
+  font-size: 30px;
   letter-spacing: 3px;
-}
-
-section h1{
-  text-shadow: 1px 5px 2px red;
-  font-size: 55px;
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-
-section p{
   text-shadow: 1px 1px 2px black;
-  font-size: 25px;
-  margin-top: 15px;
   margin-bottom: 20px;
 }
 
-
-section a{
-  padding: 12px 30px;
-  border-radius: 4px;
-  background: blue;
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  transition: .5s ease;
+section h1{
+  font-size: 55px;
+  color: orange;
+  text-shadow: 1px 5px 2px yellow;
+  margin-bottom: 20px;
 }
 
-section a:hover{
-  color: blue;
-  background: white;
+section p{
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+section .buttons a{
+  font-size: 20px;
+  text-decoration: none;
+  padding: 12px 30px;
+  border: 0.5px solid yellow;
+  color: orange;
+  /* border-radius: 50px; */
+  transition:  0.5s ease;
+  position:relative;
+  z-index: 1;
+}
+
+.change_Content::after{
+  content: "Attack Titan";
+  color: white;
+  text-shadow: 1px 5px 2px red;
+  animation: changeText 10s infinite linear;
+}
+
+@keyframes changeText {
+  20%{content: "Demon Slayer";}
+  40%{content: "Sword Art Online";}
+  60%{content: "One Punch Man";}
+  80%{content: "My Hero Academia";}
+  100%{content: "Seven Deadly Sins";}
+
+}
+
+.Animation_title::after{
+  content: "A";
+  animation: anime_title 5s infinite linear;
+}
+
+@keyframes anime_title {
+  0%{content: "An";}
+  6.25%{content: "Ani";}
+  12.5%{content: "Anim";}
+  18.75%{content: "Anime";}
+  25%{content: "Anime W";}
+  31.25%{content: "Anime Wo";}
+  37.25%{content: "Anime Wor";}
+  43.75%{content: "Anime Worl";}
+  50%{content: "Anime World";}
+  56.25%{content: "Anime Worl";}
+  62.5%{content: "Anime Wor";}
+  68.75%{content: "Anime Wo";}
+  75%{content: "Anime W";}
+  81.25%{content: "Anim";}
+  87.5%{content: "Ani";}
+  93.75%{content: "An";}
+  100%{content: "A";}
+}
+
+section .buttons a span{
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: yellow;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+section .buttons a:hover span{
+  width: 100%;
+}
+
+section .buttons a:hover{
+  /* background: yellow; */
+  color: black;
 }

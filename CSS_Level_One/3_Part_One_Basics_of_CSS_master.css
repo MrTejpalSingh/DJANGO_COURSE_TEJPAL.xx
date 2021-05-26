@@ -19,11 +19,23 @@ h3 + ul{
 }
 
 li a{
-  color: red;
+  text-decoration: none;
 }
 
+#ge{
+  max-width: 95.2px;
+  background: yellow;
+  margin-top: 20px;
+}
+
+#yt{
+  background: black;
+  margin-top: 20px;
+  max-width: 62.2px;
+}
 li a[href="https://youtube.com/"]{
   border: 2px double blue;
+  color: white;
 }
 
 li a[href="https://www.google.com/earth/"]{

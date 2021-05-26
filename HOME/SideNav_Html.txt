@@ -1,0 +1,36 @@
+  <!-- Side Nav -->
+      <div id="SideNav">
+        <nav>
+          <ul>
+            <li> <a href="#">HOME</a> </li>
+            <li> <a href="#">FEATURES</a> </li>
+            <li> <a href="#">SERVICES</a> </li>
+            <li> <a href="#">TESTIMONIALS</a> </li>
+            <li> <a href="#">MEET US</a> </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="MenuBtn">
+        <img src="images/menu.png" alt="OOPS!" id="menu" >
+      </div>
+
+      <script >
+        var MenuBtn = document.getElementById("MenuBtn")
+        var SideNav = document.getElementById("SideNav")
+        var menu = document.getElementById("menu")
+
+        MenuBtn.onclick = function(){
+          if(SideNav.style.right == "-250px"){
+            SideNav.style.right = "0";
+            menu.src = "images/close.png";
+          }
+          else {
+            SideNav.style.right = "-250px";
+            menu.src = "images/menu.png";
+          }
+        }
+
+      </script>
+  </body>
+</html>
